@@ -1,0 +1,29 @@
+{
+  "clearMocks": true,
+  "collectCoverage": true,
+  "coverageDirectory": "coverage",
+  "coverageReporters": ["html", "text"],
+  "moduleDirectories": ["node_modules"],
+  "collectCoverageFrom": ["src/**/*.[jt]s?(x)"],
+  "moduleNameMapper": {
+    "react-jsx-flow": "<rootDir>/src"
+  },
+  "moduleFileExtensions": [
+    "js",
+    "mjs",
+    "cjs",
+    "jsx",
+    "ts",
+    "tsx",
+    "json",
+    "node"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "jsdom",
+  "testMatch": ["/tests/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[tj]s?(x)"],
+  "testPathIgnorePatterns": ["node_modules", "scripts", "dist"],
+  "transform": {
+    "^.+\\.ts$": "ts-jest"
+  },
+  "preset": "ts-jest"
+}
