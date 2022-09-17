@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "jsxFactory": "",
+    "jsxFragmentFactory": "",
+    "sourceMap": true,
+    "paths": {
+      "react-jsx-flow": ["src"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}
