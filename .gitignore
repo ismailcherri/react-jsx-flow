@@ -1,4 +1,8 @@
-/node_modules
-/dist
-/coverage
+node_modules
+dist
+coverage
 yarn-error.log
+.vscode
+.DS_Store
+*.log
+.idea
