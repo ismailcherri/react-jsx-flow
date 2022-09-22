@@ -1,1 +1,2 @@
-export * from './For/For'
+export { For } from './For/For'
+export { ForMemo } from './For/ForMemo'

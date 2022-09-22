@@ -1,9 +1,4 @@
-import { Key, memo } from 'react'
-
-// see https://github.com/DefinitelyTyped/DefinitelyTyped/issues/37087#issuecomment-568218789
-type IdentityFunction = <T>(fn: T) => T
-
-const typedMemo: IdentityFunction = memo
+import { Key } from 'react'
 
 function For<T, U extends JSX.Element>({
   each,
@@ -21,6 +16,4 @@ function For<T, U extends JSX.Element>({
   return each.map<U>(children) as unknown as JSX.Element
 }
 
-const ForMemo = typedMemo(For)
-
-export { For, ForMemo }
+export { For }
