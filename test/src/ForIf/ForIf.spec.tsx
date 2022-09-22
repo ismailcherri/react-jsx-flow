@@ -6,7 +6,7 @@ import {
   ForIfMemoizedComponent,
 } from './ForIfTestComponents'
 
-describe('For and ForMemo', () => {
+describe('ForIf and ForIfMemo', () => {
   const array = ['a', 'b', 'c']
   const objectsArray = [
     { name: 'John', id: '1' },
@@ -14,7 +14,7 @@ describe('For and ForMemo', () => {
     { name: 'Judy', id: '3' },
   ]
 
-  describe('<For />', () => {
+  describe('<ForIf />', () => {
     it('should map array of primitive values', () => {
       render(<ForIfComponent array={array} when={(item) => !(item === '')} />)
 
@@ -85,7 +85,7 @@ describe('For and ForMemo', () => {
     })
   })
 
-  describe('<ForMemo />', () => {
+  describe('<ForIfMemo />', () => {
     beforeEach(() => {
       jest.restoreAllMocks()
     })
