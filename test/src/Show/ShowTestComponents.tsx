@@ -1,4 +1,3 @@
-import { useCallback, useState } from 'react'
 import { Show } from 'react-jsx-flow'
 
 export function ShowComponent({
