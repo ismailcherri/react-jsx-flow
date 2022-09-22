@@ -48,17 +48,23 @@ export function ForIfObjectComponent({
 export function ForIfMemoizedComponent({
   array,
   fallback,
-  when,
   logFunction,
 }: {
   array?: string[]
   fallback?: JSX.Element
-  when: (item: string) => boolean
   logFunction: () => void
 }): JSX.Element {
   const [value, setValue] = useState<{ name: string } | null>(null)
 
-  const callback = useCallback(
+  const filterCallback = useCallback(
+    (item: string): boolean => {
+      logFunction()
+      return item !== ''
+    },
+    [logFunction]
+  )
+
+  const mapCallback = useCallback(
     (item: string, index?: Key): JSX.Element => {
       logFunction()
       return (
@@ -73,8 +79,8 @@ export function ForIfMemoizedComponent({
   return (
     <>
       <div>{value?.name}</div>
-      <ForIfMemo each={array} fallback={fallback} when={when}>
-        {callback}
+      <ForIfMemo each={array} fallback={fallback} when={filterCallback}>
+        {mapCallback}
       </ForIfMemo>
       <button
         data-testid="btn"

@@ -93,20 +93,14 @@ describe('For and ForMemo', () => {
     it('should memoize map function', async () => {
       const logFunction = jest.fn()
       const user = userEvent.setup()
-      render(
-        <ForIfMemoizedComponent
-          array={array}
-          logFunction={logFunction}
-          when={(item) => !(item === '')}
-        />
-      )
+      render(<ForIfMemoizedComponent array={array} logFunction={logFunction} />)
       await user.click(screen.getByTestId('btn'))
 
       const elements = screen.getAllByTestId('element')
 
       expect(elements).toBeDefined()
       expect(elements.length).toEqual(3)
-      expect(logFunction).toHaveBeenCalledTimes(3)
+      expect(logFunction).toHaveBeenCalledTimes(6)
     })
   })
 })
