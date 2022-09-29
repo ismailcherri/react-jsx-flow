@@ -9,7 +9,7 @@ A collection of React JSX flow control components. Highly insipred by [SolidJS f
 ## Introduction
 
 This package provide some controllers which makes JSX flow control easier and more declarative. Memoization support is provided out of the box when possible, and, fallback is used when provided.
-They include `<For>`, `<ForIf>`, `<Show>` and `<Switch>`/`<Match>`
+They include `<For>`, `<ForIf>`, `<Show>`, `Hide` and `<Switch>`/`<Match>`
 
 ## Install
 
@@ -168,6 +168,24 @@ const Component = () => {
     <Show when={shouldShow} fallback={<>Loadding...</>}>
       <div>Desired Content</div>
     </Show>
+  )
+}
+```
+
+### `<Hide>`
+
+It accepts a condition which when true it will hide the provided JSX. An optional `fallback` when the condition is false.
+
+```jsx
+import { Hide } from 'react-jsx-flow'
+
+const Component = () => {
+  const shouldHide = true
+
+  return (
+    <Hide when={shouldHide} fallback={<>Loadding...</>}>
+      <div>Desired Content</div>
+    </Hide>
   )
 }
 ```
