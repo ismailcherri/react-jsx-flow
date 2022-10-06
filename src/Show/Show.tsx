@@ -1,5 +1,3 @@
-import { useMemo } from 'react'
-
 function Show<T>({
   when,
   fallback,
@@ -9,9 +7,7 @@ function Show<T>({
   fallback?: JSX.Element
   children: JSX.Element
 }): JSX.Element | null {
-  const condition = useMemo<T | boolean | null | undefined>(() => when, [when])
-
-  if (condition !== undefined && condition !== null && condition === true) {
+  if (when !== undefined && when !== null && when === true) {
     return children
   }
 
