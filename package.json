@@ -79,5 +79,10 @@
     "react-native": {
       "optional": true
     }
+  },
+  "jestSonar": {
+    "reportPath": "coverage",
+    "reportFile": "test-reporter.xml",
+    "indent": 4
   }
 }
