@@ -1,8 +1,9 @@
 # React JSX Flow
 
-[![CI](https://img.shields.io/github/workflow/status/ismailcherri/react-jsx-flow/CI)](https://github.com/ismailcherri/react-jsx-flow/actions?query=workflow%3ACI)
+![build](https://github.com/ismailcherri/react-jsx-flow/actions/workflows/ci.yml/badge.svg)
 [![npm](https://img.shields.io/npm/v/react-jsx-flow)](https://www.npmjs.com/package/react-jsx-flow)
 [![size](https://img.shields.io/bundlephobia/minzip/react-jsx-flow)](https://bundlephobia.com/result?p=react-jsx-flow)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ismailcherri_react-jsx-flow&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ismailcherri_react-jsx-flow)
 
 A collection of React JSX flow control components. Highly insipred by [SolidJS flow components](https://github.com/solidjs/solid/blob/main/packages/solid/src/render/flow.ts)
 
