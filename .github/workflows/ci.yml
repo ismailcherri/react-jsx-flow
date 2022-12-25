@@ -2,7 +2,10 @@ name: CI
 
 on:
   push:
+    branches:
+      - main
   pull_request:
+    types: [opened, synchronize, reopened]
 
 jobs:
   test:
@@ -13,7 +16,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: '14.x'
+          node-version: '16.x'
 
       - name: Get yarn cache
         id: yarn-cache
@@ -31,3 +34,9 @@ jobs:
 
       - name: Test
         run: yarn test
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
