@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/Users/ismail.cherri/code/react-jsx-flow/test/src/Hide/Hide.spec.tsx">
+    <testCase name="Hide &lt;Hide /&gt; should hide content if true" duration="13"/>
+    <testCase name="Hide &lt;Hide /&gt; should show content if false" duration="3"/>
+    <testCase name="Hide &lt;Hide /&gt; should render nothing if no fallback is defined" duration="2"/>
+    <testCase name="Hide &lt;Hide /&gt; should render fallback if specified" duration="3"/>
+  </file>
+  <file path="/Users/ismail.cherri/code/react-jsx-flow/test/src/Switch/Switch.spec.tsx">
+    <testCase name="Switch &lt;Switch /&gt; should show content if true" duration="14"/>
+    <testCase name="Switch &lt;Switch /&gt; should show multiple content if true" duration="2"/>
+    <testCase name="Switch &lt;Switch /&gt; should hide content if false" duration="2"/>
+    <testCase name="Switch &lt;Switch /&gt; should hide single content if false" duration="1"/>
+    <testCase name="Switch &lt;Switch /&gt; should render nothing if no fallback is defined" duration="2"/>
+    <testCase name="Switch &lt;Switch /&gt; should render fallback if specified" duration="3"/>
+  </file>
+  <file path="/Users/ismail.cherri/code/react-jsx-flow/test/src/Show/Show.spec.tsx">
+    <testCase name="Show &lt;Show /&gt; should show content if true" duration="13"/>
+    <testCase name="Show &lt;Show /&gt; should hide content if false" duration="1"/>
+    <testCase name="Show &lt;Show /&gt; should render nothing if no fallback is defined" duration="1"/>
+    <testCase name="Show &lt;Show /&gt; should render fallback if specified" duration="3"/>
+  </file>
+  <file path="/Users/ismail.cherri/code/react-jsx-flow/test/src/ForIf/ForIf.spec.tsx">
+    <testCase name="ForIf and ForIfMemo &lt;ForIf /&gt; should map array of primitive values" duration="16"/>
+    <testCase name="ForIf and ForIfMemo &lt;ForIf /&gt; should map array of objects" duration="3"/>
+    <testCase name="ForIf and ForIfMemo &lt;ForIf /&gt; should filter array of objects" duration="1"/>
+    <testCase name="ForIf and ForIfMemo &lt;ForIf /&gt; should render nothing if no fallback is defined" duration="0"/>
+    <testCase name="ForIf and ForIfMemo &lt;ForIf /&gt; should render fallback if specified" duration="2"/>
+    <testCase name="ForIf and ForIfMemo &lt;ForIfMemo /&gt; should memoize map function" duration="30"/>
+  </file>
+  <file path="/Users/ismail.cherri/code/react-jsx-flow/test/src/For/For.spec.tsx">
+    <testCase name="For and ForMemo &lt;For /&gt; should map array of primitive values" duration="16"/>
+    <testCase name="For and ForMemo &lt;For /&gt; should map array of objects" duration="3"/>
+    <testCase name="For and ForMemo &lt;For /&gt; should render nothing if no fallback is defined" duration="1"/>
+    <testCase name="For and ForMemo &lt;For /&gt; should render fallback if specified" duration="1"/>
+    <testCase name="For and ForMemo &lt;ForMemo /&gt; should memoize map function" duration="29"/>
+  </file>
+</testExecutions>

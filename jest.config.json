@@ -3,6 +3,7 @@
   "collectCoverage": true,
   "coverageDirectory": "coverage",
   "coverageReporters": ["html", "lcov", "text"],
+  "testResultsProcessor": "jest-sonar-reporter",
   "moduleDirectories": ["node_modules"],
   "collectCoverageFrom": ["src/**/*.[jt]s?(x)"],
   "moduleNameMapper": {
