@@ -2,7 +2,7 @@
   "clearMocks": true,
   "collectCoverage": true,
   "coverageDirectory": "coverage",
-  "coverageReporters": ["html", "text"],
+  "coverageReporters": ["html", "lcov"],
   "moduleDirectories": ["node_modules"],
   "collectCoverageFrom": ["src/**/*.[jt]s?(x)"],
   "moduleNameMapper": {
