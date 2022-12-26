@@ -16,7 +16,7 @@ describe('ForIf and ForIfMemo', () => {
 
   describe('<ForIf />', () => {
     it('should map array of primitive values', () => {
-      render(<ForIfComponent array={array} when={(item) => !(item === '')} />)
+      render(<ForIfComponent array={array} when={(item) => item !== ''} />)
 
       const first = screen.getByText('a')
       const elements = screen.getAllByTestId('element')
@@ -30,7 +30,7 @@ describe('ForIf and ForIfMemo', () => {
       render(
         <ForIfObjectComponent
           array={objectsArray}
-          when={(item) => !(item.name === '')}
+          when={(item) => item.name !== ''}
         />
       )
 
@@ -46,7 +46,7 @@ describe('ForIf and ForIfMemo', () => {
       render(
         <ForIfObjectComponent
           array={objectsArray}
-          when={(item) => !(item.name === 'John')}
+          when={(item) => item.name !== 'John'}
         />
       )
 
