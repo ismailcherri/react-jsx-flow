@@ -35,7 +35,7 @@ interface MatchProps {
   when: boolean | undefined | null
   children: JSX.Element
 }
-function Match({ when, children }: MatchProps): JSX.Element | null {
+function Match({ when, children }: Readonly<MatchProps>): JSX.Element | null {
   return <Show when={when}>{children}</Show>
 }
 
