@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     tags:
-      - 'v*.*.*'
+      - "v*.*.*"
 
 permissions:
   id-token: write
@@ -18,15 +18,11 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
-          node-version: '22'
-          registry-url: 'https://registry.npmjs.org'
+          node-version: "24"
           package-manager-cache: false
 
       - name: Enable Corepack
         run: corepack enable
-
-      - name: Upgrade npm for trusted publishing
-        run: npm install -g npm@11.5.1
 
       - name: Install dependencies
         run: yarn install --immutable
@@ -38,4 +34,4 @@ jobs:
         run: yarn build
 
       - name: Publish
-        run: npm publish --provenance --access public
+        run: npm publish
