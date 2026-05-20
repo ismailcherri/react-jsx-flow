@@ -13,6 +13,7 @@
     "sourceMap": true,
     "declaration": true,
     "isolatedModules": true,
+    "types": ["vitest/globals", "@testing-library/jest-dom"],
     "paths": {
       "react-jsx-flow": ["./src"]
     }

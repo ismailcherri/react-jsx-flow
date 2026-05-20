@@ -87,11 +87,11 @@ describe('ForIf and ForIfMemo', () => {
 
   describe('<ForIfMemo />', () => {
     beforeEach(() => {
-      jest.restoreAllMocks()
+      vi.restoreAllMocks()
     })
 
     it('should memoize map function', async () => {
-      const logFunction = jest.fn()
+      const logFunction = vi.fn()
       const user = userEvent.setup()
       render(<ForIfMemoizedComponent array={array} logFunction={logFunction} />)
       await user.click(screen.getByTestId('btn'))

@@ -43,7 +43,7 @@ export default tseslint.config(
     files: ['**/*.spec.{ts,tsx}', 'test/**/*.{ts,tsx}'],
     languageOptions: {
       globals: {
-        ...globals.jest,
+        ...globals.vitest,
       },
     },
   },

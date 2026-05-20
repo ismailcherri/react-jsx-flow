@@ -60,11 +60,11 @@ describe('For and ForMemo', () => {
 
   describe('<ForMemo />', () => {
     beforeEach(() => {
-      jest.restoreAllMocks()
+      vi.restoreAllMocks()
     })
 
     it('should memoize map function', async () => {
-      const logFunction = jest.fn()
+      const logFunction = vi.fn()
       const user = userEvent.setup()
       render(<ForMemoizedComponent array={array} logFunction={logFunction} />)
       await user.click(screen.getByTestId('btn'))
