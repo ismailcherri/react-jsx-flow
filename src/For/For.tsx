@@ -13,7 +13,9 @@ function For<T, U extends JSX.Element>({
     return fallback ?? null
   }
 
-  return each.map<U>(children) as unknown as JSX.Element
+  return each.map<U>((item, index) =>
+    children(item, index),
+  ) as unknown as JSX.Element
 }
 
 export { For }

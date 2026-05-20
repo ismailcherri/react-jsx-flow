@@ -6,12 +6,12 @@ function ForIf<T, U extends JSX.Element>({
   when,
   fallback,
   children,
-}: {
+}: Readonly<{
   each: readonly T[] | undefined | null
   when: (item: T, index?: number) => boolean
   fallback?: JSX.Element
   children: (item: T, index?: Key) => U
-}): JSX.Element | null {
+}>): JSX.Element | null {
   return (
     <For each={each?.filter(when)} fallback={fallback}>
       {children}

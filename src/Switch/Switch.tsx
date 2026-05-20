@@ -4,10 +4,10 @@ import { Show } from '../Show/Show'
 function Switch({
   fallback,
   children,
-}: {
+}: Readonly<{
   fallback?: JSX.Element
   children: ReactElement<MatchProps> | Array<ReactElement<MatchProps>>
-}): JSX.Element | null {
+}>): JSX.Element | null {
   const showFallback = (): boolean => {
     if (!Array.isArray(children)) {
       return (

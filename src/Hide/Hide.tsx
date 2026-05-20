@@ -5,11 +5,11 @@ function Hide<T>({
   when,
   fallback,
   children,
-}: {
+}: Readonly<{
   when: T | boolean | null | undefined
   fallback?: JSX.Element
   children: JSX.Element
-}): JSX.Element | null {
+}>): JSX.Element | null {
   return (
     <Show
       when={when === false || when === undefined || when === null}
