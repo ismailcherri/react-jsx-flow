@@ -1,0 +1,58 @@
+name: Bug report
+description: Report something that is not working as expected
+title: 'bug: '
+labels: ['bug', 'triage']
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear and concise description of the bug.
+      placeholder: When I render <For each={...}>, ... happens. I expected ...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: A CodeSandbox / StackBlitz link, or a tiny code snippet that triggers the bug.
+      render: tsx
+    validations:
+      required: true
+  - type: input
+    id: package-version
+    attributes:
+      label: react-jsx-flow version
+      placeholder: '0.4.0'
+    validations:
+      required: true
+  - type: input
+    id: react-version
+    attributes:
+      label: React version
+      placeholder: '19.2.0'
+    validations:
+      required: true
+  - type: input
+    id: bundler
+    attributes:
+      label: Bundler / framework
+      description: Vite, Next.js, CRA, Webpack, Rollup, esbuild, Metro, etc.
+      placeholder: 'Vite 5.4 / Next.js 15'
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Runtime environment
+      options:
+        - Browser
+        - Node (SSR / RSC)
+        - React Native
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Console errors, stack traces, or screenshots of the rendered output.
+      render: shell

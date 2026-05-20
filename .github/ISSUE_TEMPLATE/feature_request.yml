@@ -1,0 +1,25 @@
+name: Feature request
+description: Suggest an enhancement or new capability
+title: 'feat: '
+labels: ['enhancement', 'triage']
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user-facing problem are you trying to solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How would you like react-jsx-flow to behave? A sketch of the JSX API is helpful.
+      render: tsx
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other approaches you have thought about and why they fall short.

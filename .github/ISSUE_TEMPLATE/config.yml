@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or discussion
+    url: https://github.com/ismailcherri/react-jsx-flow/discussions
+    about: For questions and general discussion, please use GitHub Discussions.
+  - name: Security vulnerability
+    url: https://github.com/ismailcherri/react-jsx-flow/security/advisories/new
+    about: Report security issues privately via GitHub Security Advisories.
