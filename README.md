@@ -1,6 +1,6 @@
 # React JSX Flow
 
-![build](https://github.com/ismailcherri/react-jsx-flow/actions/workflows/ci.yml/badge.svg)
+[![build](https://github.com/ismailcherri/react-jsx-flow/actions/workflows/build.yml/badge.svg)](https://github.com/ismailcherri/react-jsx-flow/actions/workflows/build.yml)
 [![npm](https://img.shields.io/npm/v/react-jsx-flow)](https://www.npmjs.com/package/react-jsx-flow)
 [![size](https://img.shields.io/bundlephobia/minzip/react-jsx-flow)](https://bundlephobia.com/result?p=react-jsx-flow)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ismailcherri_react-jsx-flow&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ismailcherri_react-jsx-flow)
