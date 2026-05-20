@@ -1,3 +1,4 @@
+import type { JSX } from 'react'
 import { Hide } from 'react-jsx-flow'
 
 export function HideComponent({

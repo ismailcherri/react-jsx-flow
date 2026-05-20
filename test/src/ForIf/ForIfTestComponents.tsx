@@ -1,4 +1,5 @@
-import { useState, useCallback, Key } from 'react'
+import { useState, useCallback } from 'react'
+import type { JSX, Key } from 'react'
 import { ForIf, ForIfMemo } from 'react-jsx-flow'
 
 export function ForIfComponent({

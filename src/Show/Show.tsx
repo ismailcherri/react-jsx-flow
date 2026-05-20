@@ -1,3 +1,5 @@
+import type { JSX } from 'react'
+
 function Show<T>({
   when,
   fallback,

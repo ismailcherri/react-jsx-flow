@@ -1,3 +1,4 @@
+import type { JSX } from 'react'
 import { Switch, Match } from 'react-jsx-flow'
 
 export function SwitchComponent({

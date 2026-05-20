@@ -1,3 +1,4 @@
+import type { JSX } from 'react'
 import { Show } from '../Show/Show'
 
 function Hide<T>({

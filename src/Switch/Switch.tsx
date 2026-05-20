@@ -1,4 +1,4 @@
-import { ReactElement } from 'react'
+import type { JSX, ReactElement } from 'react'
 import { Show } from '../Show/Show'
 
 function Switch({

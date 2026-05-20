@@ -1,4 +1,4 @@
-import { Key } from 'react'
+import type { JSX, Key } from 'react'
 import { For } from '../For/For'
 
 function ForIf<T, U extends JSX.Element>({
