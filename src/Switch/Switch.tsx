@@ -20,7 +20,7 @@ function Switch({
       (child) =>
         child.props.when === undefined ||
         child.props.when === null ||
-        !child.props.when
+        !child.props.when,
     )
   }
 

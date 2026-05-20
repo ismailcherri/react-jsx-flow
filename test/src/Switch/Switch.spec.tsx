@@ -37,7 +37,7 @@ describe('Switch', () => {
           <Match when={false}>
             <div data-testid="element">Nothing!</div>
           </Match>
-        </Switch>
+        </Switch>,
       )
 
       const element = screen.queryAllByTestId('element')
@@ -60,7 +60,7 @@ describe('Switch', () => {
         <SwitchComponent
           fallback={<>Nothing to see here!</>}
           whens={[false, false, false]}
-        />
+        />,
       )
 
       const falllback = screen.getByText(/Nothing/i)

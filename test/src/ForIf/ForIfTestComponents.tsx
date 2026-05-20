@@ -62,7 +62,7 @@ export function ForIfMemoizedComponent({
       logFunction()
       return item !== ''
     },
-    [logFunction]
+    [logFunction],
   )
 
   const mapCallback = useCallback(
@@ -74,7 +74,7 @@ export function ForIfMemoizedComponent({
         </div>
       )
     },
-    [logFunction]
+    [logFunction],
   )
 
   return (

@@ -31,7 +31,7 @@ describe('Show', () => {
 
     it('should render fallback if specified', () => {
       render(
-        <ShowComponent fallback={<>Nothing to see here!</>} when={false} />
+        <ShowComponent fallback={<>Nothing to see here!</>} when={false} />,
       )
 
       const falllback = screen.getByText(/Nothing/i)

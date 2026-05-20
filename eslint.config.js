@@ -35,7 +35,11 @@ export default tseslint.config(
       ...react.configs.recommended.rules,
       ...react.configs['jsx-runtime'].rules,
       ...reactHooks.configs.recommended.rules,
-      quotes: ['error', 'single', { avoidEscape: true, allowTemplateLiterals: false }],
+      quotes: [
+        'error',
+        'single',
+        { avoidEscape: true, allowTemplateLiterals: false },
+      ],
       semi: ['error', 'never'],
     },
   },

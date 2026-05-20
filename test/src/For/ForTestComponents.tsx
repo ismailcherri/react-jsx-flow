@@ -58,7 +58,7 @@ export function ForMemoizedComponent({
         </div>
       )
     },
-    [logFunction]
+    [logFunction],
   )
 
   return (

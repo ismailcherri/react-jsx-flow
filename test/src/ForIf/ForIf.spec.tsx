@@ -31,7 +31,7 @@ describe('ForIf and ForIfMemo', () => {
         <ForIfObjectComponent
           array={objectsArray}
           when={(item) => item.name !== ''}
-        />
+        />,
       )
 
       const first = screen.getByText('John')
@@ -47,7 +47,7 @@ describe('ForIf and ForIfMemo', () => {
         <ForIfObjectComponent
           array={objectsArray}
           when={(item) => item.name !== 'John'}
-        />
+        />,
       )
 
       const first = screen.getByText('Jane')
@@ -73,7 +73,7 @@ describe('ForIf and ForIfMemo', () => {
           array={array}
           fallback={<>Nothing to see here!</>}
           when={(item) => item === ''}
-        />
+        />,
       )
 
       const falllback = screen.getByText(/Nothing/i)

@@ -24,10 +24,12 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "test": "run-s eslint tsc-test vitest",
+    "test": "run-s format:check eslint tsc-test vitest",
     "eslint": "eslint",
     "vitest": "vitest run --coverage",
     "vitest:watch": "vitest",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write .",
     "tsc-test": "tsc --project . --noEmit"
   },
   "engines": {
