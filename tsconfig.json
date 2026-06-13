@@ -14,9 +14,7 @@
     "declaration": true,
     "isolatedModules": true,
     "types": ["vitest/globals", "@testing-library/jest-dom"],
-    "paths": {
-      "react-jsx-flow": ["./src"]
-    }
+    "ignoreDeprecations": "6.0"
   },
   "include": ["src", "test"],
   "exclude": ["node_modules", "dist", "coverage"]
