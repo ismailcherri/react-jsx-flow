@@ -4,6 +4,13 @@ All notable changes to this project are documented here. The format follows [Kee
 
 Starting from version `0.4.0`, releases are managed automatically by [release-please](https://github.com/googleapis/release-please) based on [Conventional Commits](https://www.conventionalcommits.org/).
 
+## [0.9.0](https://github.com/ismailcherri/react-jsx-flow/compare/v0.8.0...v0.9.0) (2026-07-01)
+
+
+### Features
+
+* update dependencies ([e979805](https://github.com/ismailcherri/react-jsx-flow/commit/e97980573c5991a3a16eafd7d1280aad0b6641e6))
+
 ## [0.8.0](https://github.com/ismailcherri/react-jsx-flow/compare/v0.7.0...v0.8.0) (2026-06-23)
 
 
