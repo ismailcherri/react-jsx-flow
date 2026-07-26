@@ -4,6 +4,13 @@ All notable changes to this project are documented here. The format follows [Kee
 
 Starting from version `0.4.0`, releases are managed automatically by [release-please](https://github.com/googleapis/release-please) based on [Conventional Commits](https://www.conventionalcommits.org/).
 
+## [0.10.0](https://github.com/ismailcherri/react-jsx-flow/compare/v0.9.0...v0.10.0) (2026-07-26)
+
+
+### Features
+
+* **deps:** consolidate dependabot security updates ([#32](https://github.com/ismailcherri/react-jsx-flow/issues/32)) ([5aea5e4](https://github.com/ismailcherri/react-jsx-flow/commit/5aea5e48266c9da25a0362cf0614ce479e3f7bdb))
+
 ## [0.9.0](https://github.com/ismailcherri/react-jsx-flow/compare/v0.8.0...v0.9.0) (2026-07-01)
 
 
